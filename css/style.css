@@ -15,3 +15,60 @@ img{
     max-width: 100%;
 }
 
+ul{
+    list-style: none;
+}
+
+.inherit a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.flex-container{
+    display: flex;
+}
+
+.jc-btw{
+    justify-content: space-between;
+}
+
+.ai-center{
+    align-items: center;
+}
+
+/* HEADER */
+
+/* header-top */
+.header-top{
+    height: 90px;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    /* debug */
+    background-color: red;
+}
+
+.logo{
+    width: 15%;
+    
+    /* debug */
+    background-color: blue;
+}
+
+.header-button{
+    width: 5%;
+    text-align: right;
+    /* debug */
+    background-color: violet;
+}
+
+.header-top nav{
+    width: 80%;
+
+    /* debug */
+    background-color: aqua;
+}
+
+.header-top nav ul li{
+    display: inline-block;
+}
