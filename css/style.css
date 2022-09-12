@@ -73,45 +73,54 @@ ul{
     width: 70%;
     margin: 0 auto;
 }
+
+button{
+    padding: 8px 17px;
+    border: none;
+    font-size: 1rem;
+    
+}
+
+.button-blue{
+    background-color: var(--blue);
+    color: white;
+}
 /* /COMMON */
 
 /* HEADER */
 
 /* header-top */
 .header-top{
-    height: 90px;
+    height: 80px;
     width: 100%;
+    background-color: white;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 999;
-    /* debug */
-    background-color: red;
 }
 
 .logo{
-    width: 15%;
-    
-    /* debug */
-    background-color: blue;
+    width: 10%;
+    padding-left: 20px;
 }
 
-.header-button{
-    width: 5%;
-    text-align: right;
-    /* debug */
-    background-color: violet;
+.logo img{
+    vertical-align: middle;
 }
 
 .header-top nav{
-    width: 80%;
-
-    /* debug */
-    background-color: aqua;
+    width: 85%;
 }
 
 .header-top nav ul li{
     display: inline-block;
+    margin: 0 1em;
+}
+
+.header-button{
+    width: 5%;
+    text-align: center;
 }
 /* header-top */
 
