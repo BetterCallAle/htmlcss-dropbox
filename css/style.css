@@ -4,6 +4,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+/* /RESET */
 
 /* COMMON */
 html{
@@ -35,6 +36,17 @@ ul{
 .ai-center{
     align-items: center;
 }
+
+.big-container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.small-container{
+    width: 70%;
+    margin: 0 auto;
+}
+/* /COMMON */
 
 /* HEADER */
 
@@ -84,11 +96,6 @@ ul{
     height: 500px;
 }
 
-.jumbo-container{
-    width: 80%;
-    margin: 0 auto;
-}
-
 .jumbo-col-txt{
     width: 40%;
 
@@ -103,3 +110,30 @@ ul{
     background-color: yellow;
 }
 /* /jumbotron */
+/* /HEADER */
+
+/* MAIN */
+
+/* /MAIN */
+main{
+    /* debug */
+    background-color: lightgreen;
+}
+
+.row{
+    align-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.col{
+    width: calc(100% / 3 - 50px);
+
+    /* debug */
+    background-color: lightcoral;
+}
+
+.col-big{
+    margin-top: 50px;
+    /* debug */
+    background-color: lightcoral;
+}
