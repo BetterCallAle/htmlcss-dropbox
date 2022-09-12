@@ -21,6 +21,9 @@
 
      --to-section-px:100px;
      --to-items-px: 50px;
+
+     /* border */
+     --border-trasparency: 1px solid rgba(0, 0, 0, 0.2)
 }
 /* VAR */
 
@@ -78,9 +81,10 @@ ul{
 }
 
 button{
+    display: inline-block;
     padding: 8px 17px;
     border: none;
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 
 .button-blue{
@@ -171,18 +175,9 @@ h1{
 
 /* MAIN */
 
-/* /MAIN */
-main{
-    /* debug */
-    background-color: lightgreen;
-}
-
 .col{
     width: calc(100% / 3 - 50px);
-
-    /* debug */
-    background-color: lightcoral;
-    margin-bottom: 50px;
+    margin-bottom: var(--to-items);
 }
 
 .col-big{
@@ -190,6 +185,99 @@ main{
     /* debug */
     background-color: lightcoral;
 }
+/* Section-Plane */
+.choose-price{
+    margin-top: 12.5em;
+}
+
+.choose-price>h2{
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: var(--to-items-px);
+}
+
+.radio-box label{
+    display: inline-block;
+    margin-right: var(--to-items);
+    margin-bottom: var(--to-items);
+}
+
+/* col */
+.choose-price .col, .col-big{
+    border: var(--border-trasparency)
+}
+
+.card-header{
+    padding: 8px 0;
+    text-align: center;
+    border-bottom: var(--border-trasparency);
+}
+
+.card-main, .card-footer{
+    padding: 30px;
+}
+
+.card-main h3{
+    font-size: 1.5rem;
+    margin-bottom: .5em;
+}
+
+.card-main .price{
+    display: block;
+    font-weight: 700;
+    margin-bottom: .5em;
+}
+
+.plane span:last-child{
+    opacity: .9;
+    display: inline-block;
+    margin-bottom: var(--to-items);
+}
+
+.card ul li{
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 1em;
+    gap: 10px;
+}
+
+.card-main ul li i{
+    font-size: .8rem;
+}
+
+.card-main ul{
+    margin-bottom: var(--to-items-px);
+}
+
+.buy button{
+    width: 100%;
+}
+
+.buy span{
+    display: inline-block;
+    padding: 2em 0;
+    border-bottom: var(--border-trasparency);
+    margin-bottom: 2em;
+}
+
+.buy>a{
+    color: var(--blue);
+}
+
+.card-footer{
+    font-size: .9rem;
+    
+}
+
+.card-footer ul li i{
+    color: var(--blue);
+    margin: 20px 0;
+}
+
+.card-main
+/* /col */
+
+/* /Section-Plane */
 
 /* Section-2 */
 .partners{
