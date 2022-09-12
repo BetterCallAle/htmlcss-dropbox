@@ -181,9 +181,7 @@ h1{
 }
 
 .col-big{
-   
-    /* debug */
-    background-color: lightcoral;
+    margin-bottom: var(--to-sections);
 }
 /* Section-Plane */
 .choose-price{
@@ -207,7 +205,7 @@ h1{
     border: var(--border-trasparency)
 }
 
-.card span, i, a{
+.card span, i, a, p{
     font-size: .9rem;
 }
 
@@ -228,8 +226,15 @@ h1{
 
 .card-main .price{
     display: block;
-    font-weight: 700;
     margin-bottom: 10px;
+}
+
+.card-main .price, p{
+    font-weight: 700;
+}
+
+.card-main p{
+    margin-bottom: var(--to-items-px);
 }
 
 .plane span:last-child{
