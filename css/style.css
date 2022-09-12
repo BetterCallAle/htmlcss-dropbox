@@ -1,3 +1,26 @@
+/* VAR */
+:root{
+    /* color */
+    --sky-blue: #0093ce;
+    --light-blue: #b4d0e7;
+    --blue: #0061ff;
+    --dark-blue: #0d2481; 
+
+    --green: #a2d39b;
+    --light-green: #d1e9cd;
+
+     --red: #d5001f;
+     --bordeaux: #61082b;
+     --orange: #ff1c1c;  
+
+     --yellow: #ffd830;
+     
+     /* distances */
+     --to-sections: 6.25em;
+     --to-items: 3.125em;
+}
+/* VAR */
+
 /* RESET */
 *{
     margin: 0;
