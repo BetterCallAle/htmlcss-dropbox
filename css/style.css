@@ -207,6 +207,10 @@ h1{
     border: var(--border-trasparency)
 }
 
+.card span, i, a{
+    font-size: .9rem;
+}
+
 .card-header{
     padding: 8px 0;
     text-align: center;
@@ -214,35 +218,31 @@ h1{
 }
 
 .card-main, .card-footer{
-    padding: 30px;
+    padding: 30px 20px;
 }
 
 .card-main h3{
     font-size: 1.5rem;
-    margin-bottom: .5em;
+    margin-bottom: 10px;
 }
 
 .card-main .price{
     display: block;
     font-weight: 700;
-    margin-bottom: .5em;
+    margin-bottom: 10px;
 }
 
 .plane span:last-child{
     opacity: .9;
     display: inline-block;
-    margin-bottom: var(--to-items);
+    margin-bottom: var(--to-items-px);
 }
 
 .card ul li{
     display: flex;
     align-items: baseline;
     margin-bottom: 1em;
-    gap: 10px;
-}
-
-.card-main ul li i{
-    font-size: .8rem;
+    gap: 5px;
 }
 
 .card-main ul{
@@ -264,17 +264,14 @@ h1{
     color: var(--blue);
 }
 
-.card-footer{
-    font-size: .9rem;
-    
+.card-footer h3{
+    font-size: 1rem;
 }
 
 .card-footer ul li i{
     color: var(--blue);
     margin: 20px 0;
 }
-
-.card-main
 /* /col */
 
 /* /Section-Plane */
