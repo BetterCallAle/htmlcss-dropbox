@@ -137,3 +137,21 @@ main{
     /* debug */
     background-color: lightcoral;
 }
+
+/* Section-2 */
+.partners{
+    /* debug */
+    background-color: lightgray;
+}
+
+.partners-img{
+    width: 60%;
+    /* debug */
+    background-color: lightpink;
+}
+
+.partners-txt{
+    width:40%;
+    /* debug */
+    background-color: blueviolet;
+}
