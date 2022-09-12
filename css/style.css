@@ -18,6 +18,9 @@
      /* distances */
      --to-sections: 6.25em;
      --to-items: 3.125em;
+
+     --to-section-px:100px;
+     --to-items-px: 50px;
 }
 /* VAR */
 
@@ -65,20 +68,19 @@ ul{
 }
 
 .big-container{
-    width: 80%;
+    width: 75%;
     margin: 0 auto;
 }
 
 .small-container{
-    width: 70%;
+    width: 65%;
     margin: 0 auto;
 }
 
 button{
     padding: 8px 17px;
     border: none;
-    font-size: 1rem;
-    
+    font-size: 1.1rem;
 }
 
 .button-blue{
@@ -122,28 +124,47 @@ button{
     width: 5%;
     text-align: center;
 }
+
+.header-button button{
+    font-size:1rem
+}
 /* header-top */
 
 /* jumbotron */
 .jumbotron{
     padding-top: 180px;
-    /* debug */
-    background-color: bisque;
-    height: 500px;
+    background-color: var(--light-blue);
+}
+
+h1{
+    font-size: 4rem;
+    font-weight: 800;
+    margin-bottom: var(--to-items-px);
 }
 
 .jumbo-col-txt{
     width: 40%;
+}
 
-    /* debug */
-    background-color: cadetblue;
+.jumbo-col-txt button{
+    margin: 1.875em 0;
+}
+
+.jumbo-col-txt i{
+    font-size: 3.5rem;
+    margin-top: var(--to-items-px);
+    margin-bottom: 10px;
 }
 
 .jumbo-col-img{
     width: 60%;
+    position: relative;
+}
 
-    /* debug */
-    background-color: yellow;
+.jumbo-img{
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 /* /jumbotron */
 /* /HEADER */
