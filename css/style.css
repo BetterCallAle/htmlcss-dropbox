@@ -130,10 +130,11 @@ main{
 
     /* debug */
     background-color: lightcoral;
+    margin-bottom: 50px;
 }
 
 .col-big{
-    margin-top: 50px;
+   
     /* debug */
     background-color: lightcoral;
 }
