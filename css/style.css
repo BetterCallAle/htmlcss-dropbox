@@ -37,6 +37,10 @@ ul{
     align-items: center;
 }
 
+.wrap{
+    flex-wrap: wrap;
+}
+
 .big-container{
     width: 80%;
     margin: 0 auto;
@@ -120,11 +124,6 @@ main{
     background-color: lightgreen;
 }
 
-.row{
-    align-content: flex-start;
-    flex-wrap: wrap;
-}
-
 .col{
     width: calc(100% / 3 - 50px);
 
@@ -155,4 +154,24 @@ main{
     width:40%;
     /* debug */
     background-color: blueviolet;
+}
+/* /Section-2 */
+
+/* Section-3 */
+.team-col{
+    width: calc(100% / 3);
+    
+    /* debug */
+    background-color: brown;
+}
+
+.team-square{
+    width: calc(100% / 2);
+    /* debug */
+    background-color:red
+}
+
+.team-description{
+    /* debug */
+    background-color: grey;
 }
