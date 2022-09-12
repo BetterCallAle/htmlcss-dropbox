@@ -83,3 +83,23 @@ ul{
     background-color: bisque;
     height: 500px;
 }
+
+.jumbo-container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.jumbo-col-txt{
+    width: 40%;
+
+    /* debug */
+    background-color: cadetblue;
+}
+
+.jumbo-col-img{
+    width: 60%;
+
+    /* debug */
+    background-color: yellow;
+}
+/* /jumbotron */
