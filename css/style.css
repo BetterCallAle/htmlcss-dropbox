@@ -232,7 +232,7 @@ h1{
 
 /* Section-Plane */
 .choose-price{
-    margin-top: var(--to-sections);
+    margin-top: 14em;
 }
 
 .card-plane{
