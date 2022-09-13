@@ -42,6 +42,7 @@
 html{
     font-family: 'Open Sans', sans-serif;
     font-size: 100%;
+    scroll-behavior: smooth;
 }
 
 img{
@@ -62,6 +63,10 @@ ul{
     width: 65%;
     max-width: 1500px;
     margin: 0 auto;
+}
+
+a{
+    color: var(--blue);
 }
 
 .inherit a{
@@ -315,10 +320,6 @@ input[type="radio"]:checked{
     padding: 2em 0;
     border-bottom: var(--border-trasparency);
     margin-bottom: 2em;
-}
-
-.buy>a{
-    color: var(--blue);
 }
 
 .card-footer h3{
