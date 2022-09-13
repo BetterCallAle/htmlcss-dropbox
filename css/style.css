@@ -3,6 +3,7 @@
     /* color */
     --sky-blue: #0093ce;
     --light-blue: #b4d0e7;
+    --hover-blue: #0077ff;
     --blue: #0061ff;
     --dark-blue: #0d2481; 
 
@@ -100,6 +101,20 @@ button{
 .button-blue{
     background-color: var(--blue);
     color: white;
+    transition: all 125ms linear;
+}
+
+.button-white{
+    background-color:white;
+    transition: all 125ms linear;
+}
+
+.button-white:hover{
+    background-color: var(--off-white);
+}
+
+.button-blue:hover{
+    background-color: var(--hover-blue);
 }
 /* /buttons */
 /* /COMMON */
@@ -145,11 +160,10 @@ button{
     font-size:1rem
 }
 
-/* hover */
+
 .header-top nav ul li:hover{
     border-bottom: 2px solid black
 }
-/* /hover */
 /* header-top */
 
 /* jumbotron */
@@ -335,7 +349,6 @@ input[type="radio"]:checked{
 }
 
 .partners-row .col-40 button{
-    background-color: white;
     border: 1px solid black;
     font-size: 1rem;
 }
@@ -457,10 +470,6 @@ hr{
 
 .cta-section .col-40 {
     text-align: right;
-}
-
-.cta-section .col-40 button{
-    background-color: white;
 }
 /* /Section-Companies */
 
