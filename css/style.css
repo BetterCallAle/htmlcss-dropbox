@@ -362,14 +362,11 @@ h1{
     margin-bottom: var(--to-items);
 }
 
-.central-col hr{
+hr{
     width: 20%;
     opacity: .3;
     margin-bottom: var(--to-items);
 }
-
-
-
 /* square */
 .team-square{
     width: 50%;
@@ -449,6 +446,11 @@ h1{
     margin: 10em 0;
 }
 
+.faq h2{
+    font-size: 2rem;
+    margin-bottom: 1.5em;
+}
+
 .questions{
     font-size: .9rem;
     padding: 30px 0;
@@ -468,6 +470,7 @@ h1{
     margin-top: .5em;
 }
 
+/* faq-hover */
 .questions:hover .answers{
     display: inline-block;
 }
@@ -479,23 +482,27 @@ h1{
 .questions:hover .fa-chevron-down{
     display: none;
 }
-
-
-
-
-
+/* /faq-hover */
 /* /Section-faq */
 /* /MAIN */
 
 /* FOOTER */
 footer{
-    /* debug */
-    background-color: aqua;
+    background-color: black;
+    color: white;
+    padding: 8em 0 3em;
 }
 
-.footer-list{
-   
-    /* debug */
-    background-color: yellow;
+footer .footer-list ul{
+    margin: var(--to-items) 0 var(--to-sections);
 }
+
+footer .footer-list li{
+    margin-bottom: 1em;
+}
+
+footer .footer-list h4{
+    font-size: 1.7rem;
+}
+
 /* /FOOTER */
