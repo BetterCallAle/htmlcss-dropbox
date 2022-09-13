@@ -320,15 +320,17 @@ h1{
 /* Section-feature */
 #feature{
     margin-top: var(--to-sections);
+    margin-bottom: var(--to-sections);
 }
 
 #feature h2{
     font-size: 2.3rem;
+    margin-bottom: var(--to-items-px);
 }
 
 .card-info h3{
     font-size: 1.5rem;
-    margin-bottom: var(--to-items-px);
+    margin-bottom: 20px;
 }
 /* /Section-feature */
 
