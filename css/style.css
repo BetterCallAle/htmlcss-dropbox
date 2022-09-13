@@ -14,6 +14,8 @@
      --orange: #ff1c1c;  
 
      --yellow: #ffd830;
+
+     --off-white: #f5f5f5;
      
      /* distances */
      --to-sections: 6.25em;
@@ -52,6 +54,10 @@ ul{
 .inherit a{
     color: inherit;
     text-decoration: none;
+}
+
+.mb-it-em{
+    margin-bottom: var(--to-items);
 }
 
 .flex-container{
@@ -191,6 +197,14 @@ h1{
     margin-bottom: var(--to-sections);
 }
 
+.col-60{
+    width: 60%;
+}
+
+.col-40{
+    width: 40%;
+}
+
 /* Section-Plane */
 .choose-price{
     margin-top: 12.5em;
@@ -292,25 +306,16 @@ h1{
 /* /Section-Plane */
 
 /* Section-Partners */
-
-.partners-img{
-    width: 60%;
-}
-
-.partners-txt{
-    width:40%;
-}
-
-.partners-txt{
+.partners-row .col-40{
     padding-top: var(--to-items);
     padding-left: var(--to-items);
 }
 
-.partners-txt p{
+.partners-row .col-40 p{
     margin: 1.5em 0;
 }
 
-.partners-txt button{
+.partners-row .col-40 button{
     background-color: white;
     border: 1px solid black;
     font-size: 1rem;
@@ -334,31 +339,110 @@ h1{
 }
 /* /Section-feature */
 
-/* Section-4 */
+/* Section-Companies */
+.team-title h2{
+    font-size: 2.2rem;
+    margin-bottom: var(--to-items-px);
+}
+
+
 .team-col{
     width: calc(100% / 3);
-    
-    /* debug */
-    background-color: brown;
+    margin-top: var(--to-sections);
 }
 
+.central-col{
+    background-color: var(--off-white);
+    padding: 2em;
+    overflow: auto;
+}
+
+.central-col .central-img img{
+    width: 50%;
+    margin-bottom: var(--to-items);
+}
+
+.central-col hr{
+    width: 20%;
+    opacity: .3;
+    margin-bottom: var(--to-items);
+}
+
+
+
+/* square */
 .team-square{
-    width: calc(100% / 2);
-    /* debug */
-    background-color:red
+    width: 50%;
+    position: relative;
 }
 
-.team-description{
-    /* debug */
-    background-color: grey;
+.team-square::after{
+    content: "";
+    display: block;
+    padding-bottom: 100%;
 }
 
-/* Section-4 */
+.square-img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.square-img img{
+    filter: invert(1);
+}
+
+.green{
+    background-color: var(--green);
+    border: 20px solid var(--light-green);
+}
+
+.bordeaux{
+    background-color: var(--bordeaux);
+}
+
+.sky-blue{
+    background-color: var(--sky-blue);
+}
+
+.orange{
+    background-color: var(--orange);
+}
+
+.red{
+    background-color: var(--red);
+}
+
+.light-blue{
+    background-color: var(--light-blue);
+}
+
+.dark-blue{
+    background-color: var(--dark-blue);
+}
+
+.yellow{
+    background-color: var(--yellow);
+}
+/* boxes */
+
+
 .cta-section{
-    /* debug */
-    background-color: bisque;
+    background-color: var(--light-blue);
+    color: var(--bordeaux);
+    padding: 5em 0;
+    font-size: 1.5rem;
 }
-/* /Section-4 */
+
+.cta-section .col-40 {
+    text-align: right;
+}
+
+.cta-section .col-40 button{
+    background-color: white;
+}
+/* /Section-Companies */
 
 /* Section-5 */
 .questions{
