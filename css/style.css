@@ -51,13 +51,21 @@ ul{
     list-style: none;
 }
 
+.big-container{
+    width: 75%;
+    max-width: 1700px;
+    margin: 0 auto;
+}
+
+.small-container{
+    width: 65%;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
 .inherit a{
     color: inherit;
     text-decoration: none;
-}
-
-.mb-it-em{
-    margin-bottom: var(--to-items);
 }
 
 .flex-container{
@@ -74,16 +82,6 @@ ul{
 
 .wrap{
     flex-wrap: wrap;
-}
-
-.big-container{
-    width: 75%;
-    margin: 0 auto;
-}
-
-.small-container{
-    width: 65%;
-    margin: 0 auto;
 }
 
 button{
@@ -345,7 +343,6 @@ h1{
     margin-bottom: var(--to-items-px);
 }
 
-
 .team-col{
     width: calc(100% / 3);
     margin-top: var(--to-sections);
@@ -362,12 +359,17 @@ h1{
     margin-bottom: var(--to-items);
 }
 
+.central-col p{
+    margin-bottom: var(--to-items);
+}
+
 hr{
     width: 20%;
     opacity: .3;
     margin-bottom: var(--to-items);
 }
-/* square */
+
+/* boxes */
 .team-square{
     width: 50%;
     position: relative;
@@ -422,7 +424,7 @@ hr{
 .yellow{
     background-color: var(--yellow);
 }
-/* boxes */
+/* /boxes */
 
 
 .cta-section{
