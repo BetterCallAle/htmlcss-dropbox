@@ -490,7 +490,7 @@ hr{
 footer{
     background-color: black;
     color: white;
-    padding: 8em 0 3em;
+    padding: 8em 0 2em;
 }
 
 footer .footer-list ul{
@@ -503,6 +503,15 @@ footer .footer-list li{
 
 footer .footer-list h4{
     font-size: 1.7rem;
+}
+
+.lenguage{
+    display: inline-block;
+    font-size: .9rem;
+    opacity: .7;
+    border-top: 1px solid white;
+    padding-top: 2em;
+    cursor: pointer;
 }
 
 /* /FOOTER */
