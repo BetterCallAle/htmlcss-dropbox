@@ -174,7 +174,7 @@ button{
 
 /* jumbotron */
 .jumbotron{
-    padding-top: 180px;
+    padding-top: var(--to-section-px);
     background-color: var(--light-blue);
 }
 
@@ -232,7 +232,7 @@ h1{
 
 /* Section-Plane */
 .choose-price{
-    margin-top: 15em;
+    margin-top: var(--to-sections);
 }
 
 .card-plane{
