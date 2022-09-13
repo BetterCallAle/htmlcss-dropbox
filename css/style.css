@@ -82,8 +82,15 @@ ul{
 
 button{
     display: inline-block;
-    padding: 8px 17px;
     border: none;
+}
+
+.btn-big{
+    padding: 15px 20px;
+}
+
+.btn-small{
+    padding: 8px 17px;
     font-size: 1rem;
 }
 
@@ -183,9 +190,15 @@ h1{
 .col-big{
     margin-bottom: var(--to-sections);
 }
+
 /* Section-Plane */
 .choose-price{
     margin-top: 12.5em;
+}
+
+.card-plane{
+    font-size: .9rem;
+
 }
 
 .choose-price>h2{
@@ -203,10 +216,6 @@ h1{
 /* col */
 .choose-price .col, .col-big{
     border: var(--border-trasparency)
-}
-
-.card span, i, a, p{
-    font-size: .9rem;
 }
 
 .card-header{
@@ -229,12 +238,8 @@ h1{
     margin-bottom: 10px;
 }
 
-.card-main .price, p{
+.card-main .price{
     font-weight: 700;
-}
-
-.card-main p{
-    margin-bottom: var(--to-items-px);
 }
 
 .plane span:last-child{
@@ -276,6 +281,11 @@ h1{
 .card-footer ul li i{
     color: var(--blue);
     margin: 20px 0;
+}
+
+.col-big .card-plane .card-main p{
+    font-weight: 700;
+    margin-bottom: var(--to-items-px);
 }
 /* /col */
 
