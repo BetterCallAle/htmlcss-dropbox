@@ -225,6 +225,20 @@ h1{
     margin-bottom: var(--to-items);
 }
 
+input[type="radio"]{
+    appearance: none;
+    width: 1.2em;
+    height: 1.2em;
+    border:2px solid rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+    vertical-align: middle;
+    transition: 120ms all linear;
+}
+
+input[type="radio"]:checked{
+    border: 0.25em solid var(--blue);
+}
+
 /* col */
 .choose-price .col, .col-big{
     border: var(--border-trasparency)
