@@ -444,12 +444,47 @@ h1{
 }
 /* /Section-Companies */
 
-/* Section-5 */
-.questions{
-    /* debug */
-    background-color: blue;
+/* Section-faq */
+.faq{
+    margin: 10em 0;
 }
-/* /Section-5 */
+
+.questions{
+    font-size: .9rem;
+    padding: 30px 0;
+   
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.first{
+    border-top: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.answers, .fa-chevron-up{ 
+    display: none;
+}
+
+.answers{
+    margin-top: .5em;
+}
+
+.questions:hover .answers{
+    display: inline-block;
+}
+
+.questions:hover .fa-chevron-up{
+    display: inline-block;
+}
+
+.questions:hover .fa-chevron-down{
+    display: none;
+}
+
+
+
+
+
+/* /Section-faq */
 /* /MAIN */
 
 /* FOOTER */
