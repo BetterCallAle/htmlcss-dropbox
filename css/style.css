@@ -208,10 +208,6 @@ a{
     justify-content: space-between;
     gap: 50px;
 }
-
-.header-menu li:hover a{
-    border-bottom:2px solid black;
-}
 /* /header-menu */
 /* /header-top */
 
