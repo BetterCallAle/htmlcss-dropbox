@@ -89,37 +89,38 @@ a{
 /* /flex */
 
 /* buttons */
-button{
+.btn{
     display: inline-block;
-    border: none;
-    font-size: .9rem;
+    text-decoration: none;
+    text-align: center;
 }
 
 .btn-big{
-    padding: 15px 20px;
+    padding: 1em 1.5em;
 }
 
 .btn-small{
-    padding: 8px 17px;
+    padding: 1em 1.1em;
 }
 
 .button-blue{
     background-color: var(--blue);
-    color: white;
+    color: white !important;
     transition: all 125ms linear;
 }
 
 .button-white{
     background-color:white;
     transition: all 125ms linear;
-}
-
-.button-white:hover{
-    background-color: var(--off-white);
+    color: black;
 }
 
 .button-blue:hover{
     background-color: var(--hover-blue);
+}
+
+.button-white:hover{
+    background-color: var(--off-white);
 }
 /* /buttons */
 /* /COMMON */
@@ -162,10 +163,9 @@ button{
     text-align: center;
 }
 
-.header-button button{
-    font-size:1rem
+.header-button .btn{
+    line-height: 0;
 }
-
 
 .header-top nav ul li:hover{
     border-bottom: 2px solid black
@@ -188,14 +188,14 @@ h1{
     width: 35%;
 }
 
-.jumbo-col-txt button{
+.jumbo-col-txt .btn{
     margin: 1.875em 0;
 }
 
 .jumbo-col-txt i{
     font-size: 3.5rem;
     margin-top: var(--to-items-px);
-    margin-bottom: 10px;
+    margin-bottom: .2em;
 }
 
 .jumbo-col-img{
@@ -237,10 +237,9 @@ h1{
 
 .card-plane{
     font-size: .9rem;
-
 }
 
-.choose-price>h2{
+.choose-price > h2{
     font-size: 2.5rem;
     font-weight: 700;
     margin-bottom: var(--to-items-px);
@@ -254,16 +253,16 @@ h1{
 
 input[type="radio"]{
     appearance: none;
-    width: 1.2em;
-    height: 1.2em;
-    border:2px solid rgba(0, 0, 0, 0.2);
+    width: 1.3em;
+    height: 1.3em;
+    border: .2em solid rgba(0, 0, 0, 0.2);
     border-radius: 50%;
     vertical-align: middle;
     transition: 120ms all linear;
 }
 
 input[type="radio"]:checked{
-    border: 0.25em solid var(--blue);
+    border: 0.35em solid var(--blue);
 }
 
 /* col */
@@ -289,9 +288,6 @@ input[type="radio"]:checked{
 .card-main .price{
     display: block;
     margin-bottom: 10px;
-}
-
-.card-main .price{
     font-weight: 700;
 }
 
@@ -304,32 +300,32 @@ input[type="radio"]:checked{
 .card ul li{
     display: flex;
     align-items: baseline;
-    margin-bottom: 1em;
-    gap: 5px;
+    margin-bottom: 1.3em;
+    gap: .4em;
 }
 
 .card-main ul{
     margin-bottom: var(--to-items-px);
 }
 
-.buy button{
+.buy .btn{
     width: 100%;
+    margin-bottom: 2em;
 }
 
 .buy span{
     display: inline-block;
-    padding: 2em 0;
+    padding-bottom: 3em;
     border-bottom: var(--border-trasparency);
-    margin-bottom: 2em;
 }
 
 .card-footer h3{
     font-size: 1rem;
+    margin-bottom: var(--to-items);
 }
 
 .card-footer ul li i{
     color: var(--blue);
-    margin: 20px 0;
 }
 
 .col-big .card-plane .card-main p{
@@ -350,9 +346,8 @@ input[type="radio"]:checked{
     margin: 1.5em 0;
 }
 
-.partners-row .col-40 button{
+.partners-row .col-40 .button-white{
     border: 1px solid black;
-    font-size: 1rem;
 }
 /* /Section-Partners */
 
@@ -387,7 +382,6 @@ input[type="radio"]:checked{
 .central-col{
     background-color: var(--off-white);
     padding: 2em;
-    overflow: auto;
 }
 
 .central-col .central-img img{
@@ -395,13 +389,13 @@ input[type="radio"]:checked{
     margin-bottom: var(--to-items);
 }
 
-.central-col p{
-    margin-bottom: var(--to-items);
-}
-
 hr{
     width: 20%;
     opacity: .3;
+    margin-bottom: var(--to-items);
+}
+
+.central-col p{
     margin-bottom: var(--to-items);
 }
 
@@ -462,11 +456,13 @@ hr{
 }
 /* /boxes */
 
-
 .cta-section{
     background-color: var(--light-blue);
     color: var(--bordeaux);
     padding: 5em 0;
+}
+
+.cta-section .col-60{
     font-size: 1.5rem;
 }
 
