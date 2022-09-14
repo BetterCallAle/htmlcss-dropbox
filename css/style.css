@@ -67,6 +67,7 @@ ul{
 
 a{
     color: var(--blue);
+    display: inline-block;
 }
 
 .inherit a{
@@ -90,7 +91,6 @@ a{
 
 /* buttons */
 .btn{
-    display: inline-block;
     text-decoration: none;
     text-align: center;
 }
@@ -130,7 +130,6 @@ a{
 /* header-top */
 .header-top{
     height: 80px;
-    line-height: 80px;
     width: 100%;
     background-color: white;
     position: fixed;
@@ -153,9 +152,14 @@ a{
     width: 85%;
 }
 
-.header-top nav ul li{
+.header-nav{
     display: inline-block;
     margin: 0 1em;
+    position: relative;
+}
+
+.header-nav > a, .logo, .header-button{
+    line-height: 80px;
 }
 
 .header-button{
@@ -167,10 +171,49 @@ a{
     line-height: 0;
 }
 
-.header-top nav ul li:hover{
+.header-nav a:hover{
     border-bottom: 2px solid black
 }
-/* header-top */
+
+/* header-menu */
+.header-menu{
+    font-size: .8rem;
+    display: none;
+    position: absolute;
+    width: 40em;
+    top: 100%;
+    background-color: white;
+    padding: 2em 1.2em;
+    box-shadow: 0px 11px 20px -12px black;
+}
+
+.header-menu div{
+    width: 50%;
+}
+
+.h-m-left{
+   left:0;
+}
+
+.h-m-right{
+    right:0;
+}
+
+.header-menu li{
+    margin-top: 1.3em;
+}
+
+.header-nav:hover .header-menu{
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.header-menu li:hover a{
+    border-bottom:2px solid black;
+}
+/* /header-menu */
+/* /header-top */
 
 /* jumbotron */
 .jumbotron{
